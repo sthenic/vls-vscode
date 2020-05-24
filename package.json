@@ -8,7 +8,7 @@
         "type": "git",
         "url": "https://github.com/sthenic/vls-vscode"
     },
-    "publisher": "vscode-samples",
+    "publisher": "sthenic",
     "engines": {
         "vscode": "^1.43.0"
     },
@@ -65,7 +65,7 @@
                         "messages",
                         "verbose"
                     ],
-                    "default": "verbose",
+                    "default": "off",
                     "description": "Traces the communication between VS Code and the language server."
                 }
             }
