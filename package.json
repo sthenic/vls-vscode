@@ -39,6 +39,12 @@
             "type": "object",
             "title": "Verilog Language Server Configuration",
             "properties": {
+                "vls.path": {
+                    "scope": "window",
+                    "type": "string",
+                    "default": "vls",
+                    "description": "The path to the VLS executable."
+                },
                 "vls.env": {
                     "scope": "window",
                     "type": "object",

@@ -9,28 +9,27 @@ import {
 let client: LanguageClient;
 
 export function activate(context: ExtensionContext) {
-    // If the extension is launched in debug mode then the debug server options are used
-    // Otherwise the run options are used
+    /* Get the configuration object. */
+    const configuration = workspace.getConfiguration();
+    const vlsCommand = String(configuration.get('vls.path'));
+
     let serverOptions: ServerOptions = {
-        run: {command: "vls"},
-        debug: {command: "vls"},
+        run: {command: vlsCommand},
+        debug: {command: vlsCommand},
     };
 
-    // Options to control the language client
     let clientOptions: LanguageClientOptions = {
-        // Register the server for plain text documents
+        /* Register the server for Verilog documents. */
         documentSelector: [{ scheme: 'file', language: 'verilog' }],
     };
 
-    // Create the language client and start the client.
+    /* Create and start the language client. */
     client = new LanguageClient(
         'vls',
         'Verilog Language Server',
         serverOptions,
         clientOptions
     );
-
-    // Start the client. This will also launch the server
     client.start();
 }
 
