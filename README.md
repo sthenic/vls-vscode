@@ -1,7 +1,7 @@
 [![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
 # vls-vscode
-This is an LSP client for Visual Studio Code to support the [vls](https://github.com/sthenic/vls) Verilog IEEE 1364-2005 language server.
+This is an LSP client for Visual Studio Code to support the [`vls`](https://github.com/sthenic/vls) Verilog IEEE 1364-2005 language server.
 
 ## Version numbers
 Releases follow [semantic versioning](https://semver.org/) to determine how the version number is incremented. If the specification is ever broken by a release, this will be documented in the changelog.
@@ -11,6 +11,3 @@ If you discover a bug or what you believe is unintended behavior, please submit 
 
 ## License
 This tool is free software released under the [MIT license](https://opensource.org/licenses/MIT).
-
-## Author
-vls-vscode is maintained by [Marcus Eriksson](mailto:marcus.jr.eriksson@gmail.com).
