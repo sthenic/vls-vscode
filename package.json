@@ -14,7 +14,8 @@
         "vscode": "^1.43.0"
     },
     "activationEvents": [
-        "onLanguage:verilog"
+        "onLanguage:verilog",
+        "onLanguage:systemverilog"
     ],
     "main": "./out/extension",
     "dependencies": {
@@ -36,6 +37,45 @@
         "typescript": "^3.8.3"
     },
     "contributes": {
+        "languages": [
+            {
+                "id": "verilog",
+                "aliases": [
+                    "Verilog",
+                    "verilog"
+                ],
+                "extensions": [
+                    ".v",
+                    ".vh",
+                    ".vl"
+                ],
+				"configuration": "./verilog.configuration.json"
+            },
+            {
+                "id": "systemverilog",
+                "aliases": [
+                    "System Verilog",
+                    "systemverilog"
+                ],
+                "extensions": [
+                    ".sv",
+                    ".SV"
+                ],
+				"configuration": "./systemverilog.configuration.json"
+            }
+        ],
+        "grammars": [
+			{
+				"language": "verilog",
+				"scopeName": "source.verilog",
+				"path": "./syntaxes/verilog.tmLanguage"
+			},
+			{
+				"language": "systemverilog",
+				"scopeName": "source.systemverilog",
+				"path": "./syntaxes/systemverilog.tmLanguage"
+			}
+        ],
         "configuration": {
             "type": "object",
             "title": "Verilog Language Server Configuration",
