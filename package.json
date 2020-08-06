@@ -86,18 +86,6 @@
                     "default": "vls",
                     "description": "The path to the VLS executable."
                 },
-                "vls.env": {
-                    "scope": "window",
-                    "type": "object",
-                    "default": {},
-                    "description": "User-defined variables to be used for substitution in configuration entries."
-                },
-                "vls.configurations": {
-                    "scope": "window",
-                    "type": "array",
-                    "default": [],
-                    "description": "An array of configuration objects to provide VLS with project-wide configuration parameters."
-                },
                 "vls.trace.server": {
                     "scope": "window",
                     "type": "string",
