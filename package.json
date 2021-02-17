@@ -3,7 +3,6 @@
     "description": "A Verilog IEEE 1364-2005 language server client.",
     "author": "Marcus Eriksson",
     "license": "MIT",
-    "type": "module",
     "version": "0.1.0",
     "repository": {
         "type": "git",
@@ -17,7 +16,7 @@
         "onLanguage:verilog",
         "onLanguage:systemverilog"
     ],
-    "main": "./out/extension",
+    "main": "./out/src/extension",
     "dependencies": {
         "vscode-languageclient": "^6.1.3"
     },
